@@ -6,7 +6,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
-# Define a constant for city prompt
+# Define a constant for city and month prompt
 CITY_PROMPT = 'Please, enter the city you would like to see data for (Chicago, New York City, Washington): '
 MONTH_PROMPT = 'Please, enter the month from January to June you would like to see data for (you can also select "all"!): '
 
