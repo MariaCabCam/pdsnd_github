@@ -8,6 +8,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 # Define a constant for city prompt
 CITY_PROMPT = 'Please, enter the city you would like to see data for (Chicago, New York City, Washington): '
+MONTH_PROMPT = 'Please, enter the month from January to June you would like to see data for (you can also select "all"!): '
 
 def get_filters():
     """
@@ -31,7 +32,7 @@ def get_filters():
     # Get user input for month (all, january, february, ... , june)
     months = ['all', 'january', 'february', 'march', 'april', 'may', 'june']
     while True:
-        month = input('Please, enter the month from January to June you would like to see data for (you can also select "all"!): ').lower()
+        month = input(MONTH_PROMPT).lower()
         if month in months:
             break
         else:
