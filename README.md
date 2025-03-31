@@ -9,6 +9,9 @@
 ### Project Title
 Bikeshare project
 
+### Project Author
+Maria Caballero
+
 ### Description
 Create an interactive program to calculate and show data related to bikesharing usage in Chicago, New York City and Washington over January to June 2017. Users are prompted to choose the city and dates to see some statistics about usage.
 
