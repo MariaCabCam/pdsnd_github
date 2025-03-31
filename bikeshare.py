@@ -6,6 +6,9 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+# Define a constant for city prompt
+CITY_PROMPT = 'Please, enter the city you would like to see data for (Chicago, New York City, Washington): '
+
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -19,7 +22,7 @@ def get_filters():
     
     # Get user input for city (chicago, new york city, washington)
     while True:
-        city = input('Please, enter the city you would like to see data for (Chicago, New York City, Washington): ').lower()
+        city = input(CITY_PROMPT).lower()
         if city in CITY_DATA:
             break
         else:
